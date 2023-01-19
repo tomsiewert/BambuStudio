@@ -40,7 +40,7 @@ jobs:
         run: sudo ./BuildLinux.sh -u
 
       - name: Fix permissions
-        run: sudo chown -R $USER:USER build/
+        run: sudo chown -R $USER:$USER build/
 
       - name: Build dependencies
         run: ./BuildLinux.sh -d
